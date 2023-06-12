@@ -1,7 +1,38 @@
+:root {
+  background-color: antiquewhite;
+}
+
 html {
   max-width: 720px;
+  background-color: bisque;
 }
 
 body {
   background: #fff;
+}
+
+* {
+  color: cadetblue;
+}
+
+div {
+  background-color:aliceblue;
+}
+
+.fclass {
+  color: blueviolet;
+  background-color: cornsilk;
+}
+
+#myid {
+  color: aqua;
+  background-color: blueviolet;
+}
+
+div, .fclass, #myid {
+  text-align: right;
+}
+
+div > p {
+  color: green;
 }
