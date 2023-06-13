@@ -1,3 +1,4 @@
+/* 
 :root {
   background-color: antiquewhite;
 }
@@ -35,4 +36,56 @@ div, .fclass, #myid {
 
 div > p {
   color: green;
+}
+ */
+
+li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: blue;
+}
+
+.card-dark {
+  background-color: rgb(197, 190, 190);
+}
+
+ul {
+  background-color: #696565;
+}
+li:only-child {
+  color: yellow;
+}
+
+p:first-of-type {
+  color: blue;
+}
+
+p:last-of-type {
+  color: red;
+}
+
+.item:only-of-type{
+  color: aqua;
+}
+
+.item:nth-child(3) {
+  color: rgb(18, 151, 107);
+}
+
+.item:nth-last-child(1) {
+  color: blueviolet;
+}
+
+p:nth-of-type(1) {
+  color: brown;
+}
+
+p:not(.item) {
+  color: cadetblue;
+}
+
+p:empty {
+  color: coral;
 }
