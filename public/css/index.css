@@ -1,91 +1,57 @@
-/* 
-:root {
-  background-color: antiquewhite;
-}
-
-html {
-  max-width: 720px;
+.card {
   background-color: bisque;
 }
 
-body {
-  background: #fff;
+a[href] {
+  color: red;
 }
 
-* {
-  color: cadetblue;
+.input-dark {
+  background-color: rgb(138, 132, 132);
 }
-
-div {
-  background-color:aliceblue;
+.input-dark[required] {
+  color: red;
 }
-
-.fclass {
-  color: blueviolet;
-  background-color: cornsilk;
-}
-
-#myid {
-  color: aqua;
-  background-color: blueviolet;
-}
-
-div, .fclass, #myid {
-  text-align: right;
-}
-
-div > p {
+.input-number[type='number'] {
   color: green;
 }
- */
-
-li:first-child {
-  color: red;
+img[alt~='flowers'] {
+  background-color: blue;
 }
-
-li:last-child {
-  color: blue;
+.card[class~='img'] {
+  width: 100px;
 }
-
-.card-dark {
-  background-color: rgb(197, 190, 190);
-}
-
-ul {
-  background-color: #696565;
-}
-li:only-child {
-  color: yellow;
-}
-
-p:first-of-type {
-  color: blue;
-}
-
-p:last-of-type {
-  color: red;
-}
-
-.item:only-of-type{
-  color: aqua;
-}
-
-.item:nth-child(3) {
-  color: rgb(18, 151, 107);
-}
-
-.item:nth-last-child(1) {
+input[class|='btn'] {
   color: blueviolet;
 }
-
-p:nth-of-type(1) {
+input[value^='trash'] {
+  background-color: blueviolet;
+  color: bisque;
+}
+input[value*='trash222'] {
+  background-color: rgb(7, 62, 139);
+  color: rgb(239, 141, 22);
+}
+input[value$='trash333'] {
+  background-color: rgb(37, 77, 3);
+  color: rgb(232, 190, 208);
+}
+span::first-letter {
+  color: red;
+}
+span::first-line {
+  color: green;
+}
+input::placeholder {
+  background: crimson;
+}
+.parbef::before {
+  content: 'Bla bla bla: ';
+  color: blue;
+  text-decoration: line-through;
+}
+.paraft::after {
+  content: ' Some clever man.';
   color: brown;
-}
-
-p:not(.item) {
-  color: cadetblue;
-}
-
-p:empty {
-  color: coral;
+  text-decoration: underline;
 }
