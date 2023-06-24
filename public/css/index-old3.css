@@ -1,0 +1,45 @@
+:scope {
+  background-color: antiquewhite;
+}
+
+:defined {
+  font-style: italic;
+}
+
+*:any-link {
+  color: red;
+}
+
+p:dir(ltr) {
+  color: green;
+}
+
+body:fullscreen {
+  background-color: black;
+  color: white;
+}
+
+*:host-context(.childdiv) {
+  background-color: yellowgreen;
+}
+
+h1:has(+ p) {
+  background-color: yellow;
+}
+
+p::selection {
+  background-color: cyan;
+  }
+
+input:indeterminate {
+  background-color: lime;
+  color: red;
+}
+
+input:default {
+  background-color: aqua;
+}
+
+element(div) {
+  background-color: lime;
+}

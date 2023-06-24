@@ -1,45 +1,89 @@
-:scope {
-  background-color: antiquewhite;
-}
-
-:defined {
-  font-style: italic;
-}
-
-*:any-link {
+#test:target {
   color: red;
 }
 
-p:dir(ltr) {
-  color: green;
+.link:link {
+  color: rgb(25, 242, 25);
 }
 
-body:fullscreen {
-  background-color: black;
-  color: white;
+a:hover {
+  color: aqua;
 }
 
-*:host-context(.childdiv) {
-  background-color: yellowgreen;
+.card:hover {
+  background-color: brown;
 }
 
-h1:has(+ p) {
+.link:active {
+  color: blueviolet;
+}
+
+input:focus {
+  background-color: goldenrod;
+}
+
+.card:focus-within {
+  background-color: lawngreen;
+}
+
+p:lang(uk) {
+  color: blue;
   background-color: yellow;
 }
 
-p::selection {
-  background-color: cyan;
+p:lang(ru) {
+  color: bisque;
+  background-color: black;
+}
+
+p:lang(en) {
+  color: lightgreen;
+}
+
+*:enabled {
+  color: blue;
+}
+
+*:disabled {
+  color: gray;
+}
+
+input:read-write {
+  color: blue;
   }
 
-input:indeterminate {
-  background-color: lime;
-  color: red;
+input:read-only {
+  color: brown;
 }
 
-input:default {
-  background-color: aqua;
+.chb:checked ~ span {
+  color: rgb(255, 0, 0);
 }
 
-element(div) {
-  background-color: lime;
+.isvalid:valid {
+  background: limegreen;
+}
+
+.isvalid:invalid {
+  background: lightpink;
+}
+
+input:optional {
+  background: lightgreen;
+}
+
+input:required {
+  background: lightcoral;
+}
+
+.rng:out-of-range {
+  background: lightcoral;
+}
+
+.rng:in-range {
+  background: lightcyan;
+}
+
+input:placeholder-shown {
+  background: turquoise;
 }
