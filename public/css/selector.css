@@ -1,0 +1,89 @@
+#test:target {
+  color: red;
+}
+
+.link:link {
+  color: rgb(25, 242, 25);
+}
+
+a:hover {
+  color: aqua;
+}
+
+.card:hover {
+  background-color: brown;
+}
+
+.link:active {
+  color: blueviolet;
+}
+
+input:focus {
+  background-color: goldenrod;
+}
+
+.card:focus-within {
+  background-color: lawngreen;
+}
+
+p:lang(uk) {
+  color: blue;
+  background-color: yellow;
+}
+
+p:lang(ru) {
+  color: bisque;
+  background-color: black;
+}
+
+p:lang(en) {
+  color: lightgreen;
+}
+
+*:enabled {
+  color: blue;
+}
+
+*:disabled {
+  color: gray;
+}
+
+input:read-write {
+  color: blue;
+  }
+
+input:read-only {
+  color: brown;
+}
+
+.chb:checked ~ span {
+  color: rgb(255, 0, 0);
+}
+
+.isvalid:valid {
+  background: limegreen;
+}
+
+.isvalid:invalid {
+  background: lightpink;
+}
+
+input:optional {
+  background: lightgreen;
+}
+
+input:required {
+  background: lightcoral;
+}
+
+.rng:out-of-range {
+  background: lightcoral;
+}
+
+.rng:in-range {
+  background: lightcyan;
+}
+
+input:placeholder-shown {
+  background: turquoise;
+}

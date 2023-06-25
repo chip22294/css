@@ -1,89 +1,80 @@
-#test:target {
-  color: red;
+/* p {
+background: blue;
+} */
+
+.card > p {
+  /* color: #002547; */
+  /* color: rgb(100, 100, 100); */
+  /* color: rgba(255, 222, 10, 0.5) */
+  /* color: hsla(92, 100%, 52%, 1) */
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
 }
 
-.link:link {
-  color: rgb(25, 242, 25);
+p:hover {
+  -webkit-text-fill-color: rgb(38, 255, 0);
+  -webkit-text-stroke: 1px rgb(5, 5, 16);
 }
 
-a:hover {
-  color: aqua;
+#dirh1 {
+  direction: rtl;
 }
 
-.card:hover {
-  background-color: brown;
+#pinit {
+  /* color: initial;
+-webkit-text-fill-color: initial;
+-webkit-text-stroke: initial; */
+  /* color: inherit; */
+  /* color: unset; */
+  color: none;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
 }
 
-.link:active {
-  color: blueviolet;
+.rtleft {
+  writing-mode: vertical-rl;
 }
 
-input:focus {
-  background-color: goldenrod;
+.lfright {
+  writing-mode: vertical-lr;
 }
 
-.card:focus-within {
-  background-color: lawngreen;
+.pcentr {
+  text-align: center;
 }
 
-p:lang(uk) {
-  color: blue;
-  background-color: yellow;
+.djust {
+  text-align: justify;
 }
 
-p:lang(ru) {
-  color: bisque;
-  background-color: black;
+.ups {
+  text-transform: uppercase;
 }
 
-p:lang(en) {
-  color: lightgreen;
+.lows {
+  text-transform: lowercase;
 }
 
-*:enabled {
-  color: blue;
+.caps {
+  text-transform: capitalize;
 }
 
-*:disabled {
-  color: gray;
+.tab4 {
+  tab-size: 4;
 }
 
-input:read-write {
-  color: blue;
-  }
-
-input:read-only {
-  color: brown;
+.tab8 {
+  tab-size: 8;
 }
 
-.chb:checked ~ span {
-  color: rgb(255, 0, 0);
+.letsps {
+  /* letter-spacing: 50px; */
+  letter-spacing: 0.3em;
 }
 
-.isvalid:valid {
-  background: limegreen;
-}
-
-.isvalid:invalid {
-  background: lightpink;
-}
-
-input:optional {
-  background: lightgreen;
-}
-
-input:required {
-  background: lightcoral;
-}
-
-.rng:out-of-range {
-  background: lightcoral;
-}
-
-.rng:in-range {
-  background: lightcyan;
-}
-
-input:placeholder-shown {
-  background: turquoise;
+.tdecor {
+  /* text-decoration: underline dotted red; */
+  /* text-decoration: overline; */
+  text-decoration: wavy;
 }
