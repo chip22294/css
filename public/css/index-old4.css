@@ -1,0 +1,80 @@
+/* p {
+background: blue;
+} */
+
+.card > p {
+  /* color: #002547; */
+  /* color: rgb(100, 100, 100); */
+  /* color: rgba(255, 222, 10, 0.5) */
+  /* color: hsla(92, 100%, 52%, 1) */
+  color: green;
+  -webkit-text-fill-color: red;
+  -webkit-text-stroke: 1px blue;
+}
+
+p:hover {
+  -webkit-text-fill-color: rgb(38, 255, 0);
+  -webkit-text-stroke: 1px rgb(5, 5, 16);
+}
+
+#dirh1 {
+  direction: rtl;
+}
+
+#pinit {
+  /* color: initial;
+-webkit-text-fill-color: initial;
+-webkit-text-stroke: initial; */
+  /* color: inherit; */
+  /* color: unset; */
+  color: none;
+  -webkit-text-fill-color: inherit;
+  -webkit-text-stroke: inherit;
+}
+
+.rtleft {
+  writing-mode: vertical-rl;
+}
+
+.lfright {
+  writing-mode: vertical-lr;
+}
+
+.pcentr {
+  text-align: center;
+}
+
+.djust {
+  text-align: justify;
+}
+
+.ups {
+  text-transform: uppercase;
+}
+
+.lows {
+  text-transform: lowercase;
+}
+
+.caps {
+  text-transform: capitalize;
+}
+
+.tab4 {
+  tab-size: 4;
+}
+
+.tab8 {
+  tab-size: 8;
+}
+
+.letsps {
+  /* letter-spacing: 50px; */
+  letter-spacing: 0.3em;
+}
+
+.tdecor {
+  /* text-decoration: underline dotted red; */
+  /* text-decoration: overline; */
+  text-decoration: wavy;
+}
