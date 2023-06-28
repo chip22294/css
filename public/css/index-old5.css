@@ -1,0 +1,27 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  font-display: swap;
+}
+
+.card {
+  background-color: blanchedalmond;
+}
+
+p {
+  /* font-size: 24px; */
+  font-size: xx-large;
+}
+
+span {
+  font-size: smaller;
+}
+
+.fweight {
+  /* font-weight: 100; */
+  font-weight: lighter;
+}
+
+.fstyle {
+  /* font-style: italic; */
+  font-style: oblique;
+}
