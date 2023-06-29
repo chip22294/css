@@ -1,0 +1,22 @@
+.mydisplay {
+  /* display: none; */
+  /* display: inline-block; */
+  display: inline;
+}
+
+.dblock {
+  display: block;
+}
+
+.mymargin {
+  margin: 10px;
+  background: darkgrey;
+  /* margin: 10px 50px 5px 200px; */
+  /* margin-right: 100px;
+  /* margin-left: 20px; */
+  /* margin: 50px 0 50px 0; */ */
+  /* width: fit-co; */
+  /* padding: 1 0px; */
+  /* height: 200px */
+  /* min-height: 100px; */
+}

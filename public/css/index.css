@@ -1,22 +1,53 @@
-.mydisplay {
-  /* display: none; */
-  /* display: inline-block; */
-  display: inline;
+.card {
+  border: 1px solid red;
+  /* border-bottom: 5px solid red; */
+  /* border: medium dotted blue; */
 }
 
-.dblock {
-  display: block;
+.outdiv {
+  outline: 5px solid green;
+  outline-offset: 10px;
 }
 
-.mymargin {
-  margin: 10px;
-  background: darkgrey;
-  /* margin: 10px 50px 5px 200px; */
-  /* margin-right: 100px;
-  /* margin-left: 20px; */
-  /* margin: 50px 0 50px 0; */ */
-  /* width: fit-co; */
-  padding: 1 0px;
-  /* height: 200px */
-  min-height: 100px;
+/* .radiusdiv {
+  border: 10px dotted blue;
+  border-radius: 10% 30% 50% 70%;
+} */
+
+.radiusdiv {
+  border: 3px solid orange;
+  border-radius: 20px;
+}
+
+.btn {
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.txtsha {
+  text-shadow: 5px 5px 2px gray;
+}
+
+.boxsha {
+  /* border: 2px solid black; */
+  box-shadow: 5px 5px 10px 0px gray;
+}
+
+.lhs {
+  /* line-height: 10px; */
+  line-height: 150%;
+}
+
+.vasp {
+  border: 1px dotted gray;
+  /* vertical-align: baseline; */
+  /* vertical-align: sub; */
+  /* vertical-align: super; */
+  /* vertical-align: top; */
+  /* vertical-align: text-bottom; */
+  vertical-align: 10px;
+}
+
+.vasp:hover {
+  cursor: not-allowed;
 }
