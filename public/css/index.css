@@ -1,53 +1,64 @@
-.card {
-  border: 1px solid red;
-  /* border-bottom: 5px solid red; */
-  /* border: medium dotted blue; */
+.crd1 {
+  /* visibility: hidden; */
+  visibility: collapse;
 }
 
-.outdiv {
-  outline: 5px solid green;
-  outline-offset: 10px;
+.pclass {
+  width: 200px;
+  height: 100px;
+  /* overflow: hidden; */
+  /* overflow: clip; */
+  /* overflow: scroll; */
+  overflow: overlay;
 }
 
-/* .radiusdiv {
-  border: 10px dotted blue;
-  border-radius: 10% 30% 50% 70%;
-} */
-
-.radiusdiv {
-  border: 3px solid orange;
-  border-radius: 20px;
+.crd2 {
+  width: 200px;
+  height: 100px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-overflow: ellipsis; /* Коли текст не влазить */
 }
 
-.btn {
-  border: 1px solid gray;
-  border-radius: 50%;
+.crd3 {
+  width: 200px;
+  height: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-.txtsha {
-  text-shadow: 5px 5px 2px gray;
+.crd4 {
+  width: 200px;
+  height: 100px;
+  /* white-space: pre-wrap; */
+  white-space: pre-line;
 }
 
-.boxsha {
-  /* border: 2px solid black; */
-  box-shadow: 5px 5px 10px 0px gray;
+.crd5 {
+  /* overflow-wrap: break-word; */
+  overflow-wrap: anywhere;
+  width: 100px;
+  /* word-break: keep-all; */
+  word-break: break-all;
 }
 
-.lhs {
-  /* line-height: 10px; */
-  line-height: 150%;
+.crd6 {
+  width: 100px;
+  hyphens: manual;
 }
 
-.vasp {
-  border: 1px dotted gray;
-  /* vertical-align: baseline; */
-  /* vertical-align: sub; */
-  /* vertical-align: super; */
-  /* vertical-align: top; */
-  /* vertical-align: text-bottom; */
-  vertical-align: 10px;
+.crd7 {
+  width: 100px;
+  hyphens: auto;
+  hyphenate-character: '1';
 }
 
-.vasp:hover {
-  cursor: not-allowed;
+.crd8 {
+  word-spacing: 20px;
+}
+
+.crd9 {
+  overflow: auto;
+  resize: both;
 }
