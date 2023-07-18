@@ -1,0 +1,64 @@
+.crd1 {
+  /* visibility: hidden; */
+  visibility: collapse;
+}
+
+.pclass {
+  width: 200px;
+  height: 100px;
+  /* overflow: hidden; */
+  /* overflow: clip; */
+  /* overflow: scroll; */
+  overflow: overlay;
+}
+
+.crd2 {
+  width: 200px;
+  height: 100px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  text-overflow: ellipsis; /* Коли текст не влазить */
+}
+
+.crd3 {
+  width: 200px;
+  height: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.crd4 {
+  width: 200px;
+  height: 100px;
+  /* white-space: pre-wrap; */
+  white-space: pre-line;
+}
+
+.crd5 {
+  /* overflow-wrap: break-word; */
+  overflow-wrap: anywhere;
+  width: 100px;
+  /* word-break: keep-all; */
+  word-break: break-all;
+}
+
+.crd6 {
+  width: 100px;
+  hyphens: manual;
+}
+
+.crd7 {
+  width: 100px;
+  hyphens: auto;
+  hyphenate-character: '1';
+}
+
+.crd8 {
+  word-spacing: 20px;
+}
+
+.crd9 {
+  overflow: auto;
+  resize: both;
+}

@@ -1,64 +1,61 @@
-.crd1 {
-  /* visibility: hidden; */
-  visibility: collapse;
+body {
+  background: rgb(246, 205, 131);
 }
 
-.pclass {
+.crd {
+  /* background: rgb(255, 221, 0); */
+  background: transparent;
+}
+
+.crdbgcol {
+  background-color: rgba(100, 100, 100, 0.1);
+}
+
+.crdbgimg {
+  background-image: url('../img/tbgr.jpg');
   width: 200px;
-  height: 100px;
-  /* overflow: hidden; */
-  /* overflow: clip; */
-  /* overflow: scroll; */
-  overflow: overlay;
+  height: 200px;
 }
 
-.crd2 {
+.crdbgradialgr {
   width: 200px;
-  height: 100px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  text-overflow: ellipsis; /* Коли текст не влазить */
+  height: 200px;
+  /* background: rgb(187, 188, 195); */
+  background: radial-gradient(
+    circle,
+    rgba(187, 188, 195, 1) 0%,
+    rgba(152, 87, 100, 1) 100%
+  );
 }
 
-.crd3 {
-  width: 200px;
-  height: 100px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+.bgattachment {
+  background-image: url('../img/tbgr2.jpg');
+  /* background-attachment: fixed; */
+  background-attachment: local;
 }
 
-.crd4 {
-  width: 200px;
-  height: 100px;
-  /* white-space: pre-wrap; */
-  white-space: pre-line;
+/* body {
+  background-image: url('../img/tbgr2.jpg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+} */
+
+.bgborder {
+  background-image: url('../img/tbgr2.jpg');
+  border: 20px solid transparent;
+  padding: 40px;
+  color: blue;
+  /* background-clip: padding-box; */
+  /* background-clip: content-box; */
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
-.crd5 {
-  /* overflow-wrap: break-word; */
-  overflow-wrap: anywhere;
-  width: 100px;
-  /* word-break: keep-all; */
-  word-break: break-all;
-}
-
-.crd6 {
-  width: 100px;
-  hyphens: manual;
-}
-
-.crd7 {
-  width: 100px;
-  hyphens: auto;
-  hyphenate-character: '1';
-}
-
-.crd8 {
-  word-spacing: 20px;
-}
-
-.crd9 {
-  overflow: auto;
-  resize: both;
+.bgorigin {
+  background-image: url('../img/tbgr2.jpg');
+  border: 20px solid transparent;
+  padding: 40px;
+  color: blue;
+  background-origin: border-box;
 }
