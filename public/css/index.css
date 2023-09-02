@@ -1,61 +1,79 @@
-body {
-  background: rgb(246, 205, 131);
+.lst {
+  /* list-style-type: square; */
+  /* list-style-type: none; */
+  /* list-style-type: disc; */
+  /* list-style-type: circle; */
+  /* list-style-type: decimal; */
+  /* list-style-type: decimal-leading-zero; */
+  /* list-style-type: lower-roman; */
+  /* list-style-type: upper-roman; */
+  /* list-style-type: lower-alpha; */
+  list-style-type: upper-alpha;
 }
 
-.crd {
-  /* background: rgb(255, 221, 0); */
-  background: transparent;
+.lsp {
+  /* list-style-position: inside; */
+  list-style-position: outside;
 }
 
-.crdbgcol {
-  background-color: rgba(100, 100, 100, 0.1);
-}
-
-.crdbgimg {
-  background-image: url('../img/tbgr.jpg');
-  width: 200px;
-  height: 200px;
-}
-
-.crdbgradialgr {
-  width: 200px;
-  height: 200px;
-  /* background: rgb(187, 188, 195); */
-  background: radial-gradient(
-    circle,
-    rgba(187, 188, 195, 1) 0%,
-    rgba(152, 87, 100, 1) 100%
+.lsi {
+  /* list-style-image: url(/img/tbgr.jpg); */
+  list-style-image: linear-gradient(
+    to bottom right,
+    blue,
+    red
   );
 }
 
-.bgattachment {
-  background-image: url('../img/tbgr2.jpg');
-  /* background-attachment: fixed; */
-  background-attachment: local;
+.mt tr {
+  border: 1px solid blue;
 }
 
-/* body {
-  background-image: url('../img/tbgr2.jpg');
-  background-repeat: no-repeat;
-  background-position: center right;
-  background-size: cover;
-} */
-
-.bgborder {
-  background-image: url('../img/tbgr2.jpg');
-  border: 20px solid transparent;
-  padding: 40px;
-  color: blue;
-  /* background-clip: padding-box; */
-  /* background-clip: content-box; */
-  background-clip: text;
-  -webkit-background-clip: text;
+.mt td {
+  border: 1px solid rgb(3, 7, 100);
+  border-bottom-color: brown;
 }
 
-.bgorigin {
-  background-image: url('../img/tbgr2.jpg');
-  border: 20px solid transparent;
-  padding: 40px;
-  color: blue;
-  background-origin: border-box;
+.mt {
+  table-layout: auto;
+  /* table-layout: fixed; */
+  width: 600px;
+
+  border-collapse: separate;
+  border-spacing: 3px 5px;
+
+  caption-side: top;
+
+  empty-cells: hide;
+}
+
+.mt caption {
+  opacity: 60%; /* Прозорість */
+}
+
+.mt td::before {
+  /* content: 'Before: '; */
+  content: open-quote;
+}
+
+.mt td::after {
+  content: close-quote;
+}
+
+.emptd {
+  content: url(/img/tbgr.jpg);
+  width: 100px;
+  height: 100px;
+}
+
+.mt {
+  /* margin: calc(600px / 2); */
+}
+
+:root {
+  --myvar: #ff1e4b;
+}
+
+.tdvar {
+  color: var(--myvar);
 }

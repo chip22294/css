@@ -1,0 +1,61 @@
+body {
+  background: rgb(246, 205, 131);
+}
+
+.crd {
+  /* background: rgb(255, 221, 0); */
+  background: transparent;
+}
+
+.crdbgcol {
+  background-color: rgba(100, 100, 100, 0.1);
+}
+
+.crdbgimg {
+  background-image: url('../img/tbgr.jpg');
+  width: 200px;
+  height: 200px;
+}
+
+.crdbgradialgr {
+  width: 200px;
+  height: 200px;
+  /* background: rgb(187, 188, 195); */
+  background: radial-gradient(
+    circle,
+    rgba(187, 188, 195, 1) 0%,
+    rgba(152, 87, 100, 1) 100%
+  );
+}
+
+.bgattachment {
+  background-image: url('../img/tbgr2.jpg');
+  /* background-attachment: fixed; */
+  background-attachment: local;
+}
+
+/* body {
+  background-image: url('../img/tbgr2.jpg');
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: cover;
+} */
+
+.bgborder {
+  background-image: url('../img/tbgr2.jpg');
+  border: 20px solid transparent;
+  padding: 40px;
+  color: blue;
+  /* background-clip: padding-box; */
+  /* background-clip: content-box; */
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bgorigin {
+  background-image: url('../img/tbgr2.jpg');
+  border: 20px solid transparent;
+  padding: 40px;
+  color: blue;
+  background-origin: border-box;
+}
